@@ -72,7 +72,7 @@
 										<% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
 											<a class="btn btn-sm btn-warning" href="/campgrounds/<%= campgrounds._id%>/comments/<%=comment._id%>/edit">edit</a>
 											<form class="delete-form" action="/campgrounds/<%=campgrounds._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST">
-												<input type="submit" class="btn btn-danger btn-sm" value="delete">
+												<input type="submit" class="btn btn-danger btn-sm m-3" value="delete">
 											</form>
 											<% }%>
 									</div>
